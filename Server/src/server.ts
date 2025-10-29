@@ -1,7 +1,5 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js"
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js"
-import { z } from "zod"
-import fs from "node:fs/promises"
 import { registerBudgetingTool } from "./tools/budgeting-tool"
 import {registerFinancialProfileTool} from "./tools/financial-profile-tool"
 import { registerGenerateRandomFinancialProfileTool } from "./tools/random-financial-profile"
@@ -80,7 +78,6 @@ server.prompt(
     }
   }
 )
-
 
 async function main() {
   const transport = new StdioServerTransport()

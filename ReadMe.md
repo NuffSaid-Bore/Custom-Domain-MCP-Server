@@ -1,21 +1,3 @@
-# Financial WellNess & Personalization
-
-
-## Follow these steps to get the project running
-
-1. npm install @modelcontextprotocol/sdk
-
-
-
-
-## To run the project
- npm run server:build:watch
- mpm run server:inspect
-
- Here’s a **detailed and professional `README.md`** for your project based on the provided code. It includes project overview, architecture, setup instructions, tool descriptions, and examples for clarity.
-
----
-
 # 🧠 Financial Wellness & Personalization MCP Server
 
 **Version:** 1.0.0
@@ -175,8 +157,8 @@ A built-in prompt `generate-dummy-financial-profile` creates a realistic synthet
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/financial-wellness-server.git
-cd financial-wellness-server
+git clone https://github.com/NuffSaid-Bore/Custom-Domain-MCP-Server.git
+cd Custom-Domain-MCP-Server
 ```
 
 ### 2. Install dependencies
