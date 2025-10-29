@@ -1,0 +1,16 @@
+{
+	"servers": {
+		"Financial Wellness & Personalization": {
+			"type": "stdio",
+			"command": "node",
+			"args": ["Server/build/server.js"],
+			"cwd": "${workspaceFolder}",
+			"dev": {
+				"watch": "Server/build/**/*.js",
+				"debug": {
+				"type": "node"
+				}
+			}
+		}
+	}
+}

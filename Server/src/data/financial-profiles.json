@@ -1,0 +1,191 @@
+[
+  {
+    "id": 1,
+    "createdAt": "2025-10-13T16:35:19+02:00",
+    "name": "John",
+    "age": 23,
+    "goals": [
+      {
+        "name": "Vacation",
+        "amount": 2000
+      },
+      {
+        "name": "Emergency Fund",
+        "amount": 12000
+      }
+    ],
+    "income": {
+      "salary": 40000,
+      "freelance": 5000,
+      "consulting": 5000
+    },
+    "debts": [
+      {
+        "name": "Student Loan",
+        "monthly_payment": 1500,
+        "interestRate": 5.5
+      },
+      {
+        "name": "Credit Card",
+        "monthly_payment": 1000,
+        "interestRate": 11.5
+      }
+    ],
+    "sessionContext": {},
+    "transactionAggregates": [
+      {
+        "category": "Groceries",
+        "totalAmount": 3900,
+        "month": "October"
+      },
+      {
+        "category": "Dining Out",
+        "totalAmount": 1200,
+        "month": "October"
+      },
+      {
+        "category": "Transport",
+        "totalAmount": 1500,
+        "month": "October"
+      },
+      {
+        "category": "Utilities",
+        "totalAmount": 2800,
+        "month": "October"
+      }
+    ],
+    "recurringMerchants": [
+      {
+        "name": "Netflix",
+        "amount": 159.99,
+        "frequency": "monthly"
+      },
+      {
+        "name": "Spotify",
+        "amount": 59.99,
+        "frequency": "monthly"
+      },
+      {
+        "name": "Gym Membership",
+        "amount": 500,
+        "frequency": "monthly"
+      },
+      {
+        "name": "MTN Data Plan",
+        "amount": 200,
+        "frequency": "weekly"
+      }
+    ],
+    "payDates": [
+      {
+        "date": "2025-10-25",
+        "category": "Salary"
+      },
+      {
+        "date": "2025-11-10",
+        "category": "Freelance"
+      },
+      {
+        "date": "2025-11-25",
+        "category": "Consulting"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "createdAt": "2025-10-15T12:19:30+02:00",
+    "name": "Smith",
+    "age": 28,
+    "goals": [
+      {
+        "name": "Vacation",
+        "amount": 2000
+      },
+      {
+        "name": "buy a house",
+        "amount": 1000000
+      }
+    ],
+    "income": {
+      "salary": 200000,
+      "freelance": 10000,
+      "consulting": 5000
+    },
+    "debts": [
+      {
+        "name": "Student Loan",
+        "monthly_payment": 2500,
+        "interestRate": 10.5
+      },
+      {
+        "name": "Credit Card",
+        "monthly_payment": 1000,
+        "interestRate": 12.0
+      },
+      {
+        "name": "Clothing Account",
+        "monthly_payment": 500,
+        "interestRate": 14.0
+      }
+    ],
+    "sessionContext": {},
+    "transactionAggregates": [
+      {
+        "category": "Groceries",
+        "totalAmount": 3900,
+        "month": "October"
+      },
+      {
+        "category": "Dining Out",
+        "totalAmount": 1200,
+        "month": "October"
+      },
+      {
+        "category": "Transport",
+        "totalAmount": 1500,
+        "month": "October"
+      },
+      {
+        "category": "Utilities",
+        "totalAmount": 2800,
+        "month": "October"
+      }
+    ],
+    "recurringMerchants": [
+      {
+        "name": "Netflix",
+        "amount": 159.99,
+        "frequency": "monthly"
+      },
+      {
+        "name": "Spotify",
+        "amount": 59.99,
+        "frequency": "monthly"
+      },
+      {
+        "name": "Gym Membership",
+        "amount": 500,
+        "frequency": "monthly"
+      },
+      {
+        "name": "WiFi Data Plan",
+        "amount": 200,
+        "frequency": "monthly"
+      }
+    ],
+    "payDates": [
+      {
+        "date": "2025-10-25",
+        "category": "Salary"
+      },
+      {
+        "date": "2025-11-10",
+        "category": "Freelance"
+      },
+      {
+        "date": "2025-11-25",
+        "category": "Consulting"
+      }
+    ]
+  }
+]
