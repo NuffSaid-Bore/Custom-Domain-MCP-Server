@@ -61,15 +61,22 @@ export function registerCashFlowTool(server: McpServer) {
 
                     const netMonthly = totalIncome - totalMonthlyExpenses
 
+                    const formatRand = (amount: number) =>
+                    new Intl.NumberFormat("en-ZA", {
+                        style: "currency",
+                        currency: "ZAR",
+                    }).format(amount);
+
+
                     // Project month-by-month forecast
                     const projection = Array.from({ length: months }).map((_, i) => ({
                         month: `Month ${i + 1}`,
-                        projectedBalance: netMonthly * (i + 1),
-                        cumulativeNetFlow: netMonthly * (i + 1),
+                        projectedBalance: formatRand(netMonthly * (i + 1)),
+                        cumulativeNetFlow: formatRand(netMonthly * (i + 1)),
                         summary: {
-                            income: totalIncome,
-                            expenses: totalMonthlyExpenses,
-                            netMonthly,
+                            income: formatRand(totalIncome),
+                            expenses: formatRand(totalMonthlyExpenses),
+                            netMonthly: formatRand(netMonthly),
                         },
                     }))
 

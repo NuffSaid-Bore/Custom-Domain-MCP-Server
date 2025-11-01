@@ -120,12 +120,12 @@
       {
         "name": "Credit Card",
         "monthly_payment": 1000,
-        "interestRate": 12.0
+        "interestRate": 12
       },
       {
         "name": "Clothing Account",
         "monthly_payment": 500,
-        "interestRate": 14.0
+        "interestRate": 14
       }
     ],
     "sessionContext": {},
@@ -187,5 +187,98 @@
         "category": "Consulting"
       }
     ]
+  },
+  {
+    "id": 3,
+    "createdAt": "2025-11-01T04:11:20+02:00",
+    "name": "Ivy",
+    "age": 29,
+    "goals": [
+      {
+        "name": "Buy a House",
+        "amount": 355834
+      },
+      {
+        "name": "Vacation",
+        "amount": 5246
+      },
+      {
+        "name": "Retirement",
+        "amount": 77555
+      }
+    ],
+    "income": {
+      "salary": 94921,
+      "freelance": 14021
+    },
+    "debts": [
+      {
+        "name": "Car Loan",
+        "monthly_payment": 1391
+      },
+      {
+        "name": "Personal Loan",
+        "monthly_payment": 2400
+      }
+    ],
+    "transactionAggregates": [
+      {
+        "category": "Groceries",
+        "totalAmount": 1579,
+        "month": "October"
+      },
+      {
+        "category": "Utilities",
+        "totalAmount": 4941,
+        "month": "October"
+      },
+      {
+        "category": "Transport",
+        "totalAmount": 2410,
+        "month": "October"
+      },
+      {
+        "category": "Dining Out",
+        "totalAmount": 4780,
+        "month": "October"
+      }
+    ],
+    "recurringMerchants": [
+      {
+        "name": "Gym Membership",
+        "amount": 500,
+        "frequency": "monthly"
+      },
+      {
+        "name": "WiFi Data Plan",
+        "amount": 250,
+        "frequency": "monthly"
+      },
+      {
+        "name": "Spotify",
+        "amount": 59.99,
+        "frequency": "monthly"
+      },
+      {
+        "name": "MTN Data Plan",
+        "amount": 200,
+        "frequency": "weekly"
+      }
+    ],
+    "payDates": [
+      {
+        "date": "2025-10-25",
+        "category": "Salary"
+      },
+      {
+        "date": "2025-11-10",
+        "category": "Freelance"
+      },
+      {
+        "date": "2025-11-25",
+        "category": "Salary"
+      }
+    ],
+    "sessionContext": {}
   }
 ]

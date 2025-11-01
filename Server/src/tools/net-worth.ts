@@ -9,7 +9,13 @@ export function registerNetWorthTool(server: McpServer) {
       assets: z.array(z.object({ name: z.string(), value: z.number() })),
       liabilities: z.array(z.object({ name: z.string(), value: z.number() })),
     },
-    {},
+    {
+      title: "Analyze NetWorth based on Assets and Liabilities",
+      readOnlyHint: false,
+      destructiveHint: false,
+      idempotentHint: true,
+      openWorldHint: true,
+    },
     async ({ assets = [], liabilities = [] }) => {
       const totalAssets = assets.reduce((s, a) => s + a.value, 0);
       const totalLiabilities = liabilities.reduce((s, l) => s + l.value, 0);
@@ -31,8 +37,8 @@ export function registerNetWorthTool(server: McpServer) {
             text: [
               `📊 Net Worth Summary`,
               `-------------------------`,
-              `💰 Total Assets: ${totalAssets.toLocaleString()}`,
-              `🏦 Total Liabilities: ${totalLiabilities.toLocaleString()}`,
+              `💰 Total Assets: R${totalAssets.toLocaleString()}`,
+              `🏦 Total Liabilities: R${totalLiabilities.toLocaleString()}`,
               `🧾 Net Worth: ${netWorth.toLocaleString()}`,
               ``,
               status,

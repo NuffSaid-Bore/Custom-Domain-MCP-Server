@@ -1,0 +1,26 @@
+{
+  "mcpServers": {
+    "Financial Wellness & Personalization": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "Server/build/server.js"
+      ],
+      "cwd": "${workspaceFolder}",
+      "dev": {
+        "watch": "Server/build/**/*.js",
+        "debug": {
+          "type": "node"
+        }
+      },
+      "alwaysAllow": [
+        "budgeting-cashflow-analyzer",
+        "generate-random-financial-profile",
+        "analyze-expenses",
+        "debt-repayment-strategy",
+        "calculate-net-worth",
+        "cash-flow-forecast"
+      ]
+    }
+  }
+}

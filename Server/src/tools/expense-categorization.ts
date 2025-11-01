@@ -44,11 +44,11 @@ export async function registerExpenseCategorizationTool(server: McpServer) {
 
           if (savingsPotential > 0) {
             suggestions.push(
-              `You're saving about ${savingsPotential.toLocaleString()} per month — consider allocating it toward goals like "${profile.goals[0]?.name}".`
+              `You're saving about R${savingsPotential.toLocaleString()} per month — consider allocating it toward goals like "${profile.goals[0]?.name}".`
             )
           } else {
             suggestions.push(
-              `You're overspending by ${Math.abs(savingsPotential).toLocaleString()} — review discretionary categories like "${topCategories[0].category}".`
+              `You're overspending by R${Math.abs(savingsPotential).toLocaleString()} — review discretionary categories like "${topCategories[0].category}".`
             )
           }
 
