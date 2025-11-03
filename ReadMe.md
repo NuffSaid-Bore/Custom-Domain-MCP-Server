@@ -136,7 +136,7 @@ A built-in prompt `generate-dummy-financial-profile` creates a realistic synthet
   "age": 32,
   "goals": [{"name": "Emergency Fund", "amount": 5000}],
   "income": {"salary": 75000, "freelance": 5000, "consulting": 0},
-  "debts": [{"name": "Student Loan", "monthly_payment": 250}],
+  "debts": [{"name": "Student Loan", "monthly_payment": 250, "interestRate": 15.5}],
   "transactionAggregates": [
     {"category": "Groceries", "totalAmount": 400, "month": "October"}
   ],
