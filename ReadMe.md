@@ -221,11 +221,11 @@ Example schema and usage (simplified):
 
 ```js
 {
-  "income": 5000,
-  "expenses": [
-    {"category": "Rent", "amount": 1500},
-    {"category": "Utilities", "amount": 200},
-    {"category": "Groceries", "amount": 400}
+  "income": {"salary": 10000, "freelance": 500, "consulting": 500},
+  "recurringMerchants": [
+    {"category": "Rent", "amount": 1500, "month": "November" },
+    {"category": "Utilities", "amount": 200, "month": "November"},
+    {"category": "Groceries", "amount": 400, "month": "November"}
   ]
 }
 ```
@@ -234,7 +234,7 @@ The tool might return:
 
 ```json
 {
-  "totalIncome": 5000,
+  "totalIncome": 11000,
   "totalExpenses": 2100,
   "savings": 2900,
   "savingsRate": 0.58
