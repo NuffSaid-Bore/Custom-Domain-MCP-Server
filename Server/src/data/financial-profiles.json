@@ -120,12 +120,12 @@
       {
         "name": "Credit Card",
         "monthly_payment": 1000,
-        "interestRate": 12
+        "interestRate": 12.0
       },
       {
         "name": "Clothing Account",
         "monthly_payment": 500,
-        "interestRate": 14
+        "interestRate": 14.0
       }
     ],
     "sessionContext": {},
@@ -214,11 +214,13 @@
     "debts": [
       {
         "name": "Car Loan",
-        "monthly_payment": 1391
+        "monthly_payment": 1391,
+        "interestRate": 10.5
       },
       {
         "name": "Personal Loan",
-        "monthly_payment": 2400
+        "monthly_payment": 2400,
+        "interestRate": 10.5
       }
     ],
     "transactionAggregates": [
@@ -276,6 +278,92 @@
       },
       {
         "date": "2025-11-25",
+        "category": "Salary"
+      }
+    ],
+    "sessionContext": {}
+  },
+  {
+    "id": 4,
+    "createdAt": "2025-11-03T04:43:17+02:00",
+    "name": "Diana",
+    "age": 37,
+    "goals": [
+      {
+        "name": "Retirement",
+        "amount": 227217
+      },
+      {
+        "name": "Car Purchase",
+        "amount": 189835
+      }
+    ],
+    "income": {
+      "salary": 104069
+    },
+    "debts": [
+       {
+        "name": "Student Loan",
+        "monthly_payment": 2500,
+        "interestRate": 10.5
+      },
+      {
+        "name": "Credit Card",
+        "monthly_payment": 1000,
+        "interestRate": 12.0
+      }
+    ],
+    "transactionAggregates": [
+      {
+        "category": "Groceries",
+        "totalAmount": 3970,
+        "month": "October"
+      },
+      {
+        "category": "Utilities",
+        "totalAmount": 4657,
+        "month": "October"
+      },
+      {
+        "category": "Transport",
+        "totalAmount": 2157,
+        "month": "October"
+      },
+      {
+        "category": "Dining Out",
+        "totalAmount": 4339,
+        "month": "October"
+      }
+    ],
+    "recurringMerchants": [
+      {
+        "name": "Netflix",
+        "amount": 159.99,
+        "frequency": "monthly"
+      },
+      {
+        "name": "Amazon Prime",
+        "amount": 299,
+        "frequency": "monthly"
+      },
+      {
+        "name": "WiFi Data Plan",
+        "amount": 250,
+        "frequency": "monthly"
+      },
+      {
+        "name": "MTN Data Plan",
+        "amount": 200,
+        "frequency": "weekly"
+      }
+    ],
+    "payDates": [
+      {
+        "date": "2025-10-25",
+        "category": "Salary"
+      },
+      {
+        "date": "2025-11-10",
         "category": "Salary"
       }
     ],

@@ -37,10 +37,11 @@ export function generateRandomProfile(): FinancialProfile {
 
   // Random debts
   const debtTypes = ["Student Loan", "Credit Card", "Personal Loan", "Car Loan"]
-  const numDebts = Math.floor(Math.random() * 3) + 1
+  const numDebts = Math.floor(Math.random() * 3) + 2
   const debts = debtTypes.sort(() => 0.5 - Math.random()).slice(0, numDebts).map(debtName => ({
     name: debtName,
-    monthly_payment: Math.floor(Math.random() * 3000) + 500
+    monthly_payment: Math.floor(Math.random() * 3000) + 500,
+    interestRate: (Math.random() * (25 - 2) + 2).toFixed(2)
   }))
 
   // Random transaction aggregates
