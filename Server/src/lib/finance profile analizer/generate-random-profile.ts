@@ -1,5 +1,4 @@
 import { FinancialProfile } from "./finance-profiles"
-import { getJohannesburgTimestampISO } from "./created-at"
 
 export function generateRandomProfile(): FinancialProfile {
   const names = ["Alice", "Bob", "Charlie", "Diana", "Eve", "Frank", "Grace", "Henry", "Ivy", "Jack"]
@@ -36,19 +35,19 @@ export function generateRandomProfile(): FinancialProfile {
   const selectedGoals = goals.sort(() => 0.5 - Math.random()).slice(0, numGoals)
 
   // Random debts
-  const debtTypes = ["Student Loan", "Credit Card", "Personal Loan", "Car Loan"]
+  const debtTypes = ["Student Loan", "Credit Card", "Personal Loan", "Car Loan", "Bond"]
   const numDebts = Math.floor(Math.random() * 3) + 2
   const debts = debtTypes.sort(() => 0.5 - Math.random()).slice(0, numDebts).map(debtName => ({
     name: debtName,
     monthly_payment: Math.floor(Math.random() * 3000) + 500,
-    interestRate: (Math.random() * (25 - 2) + 2).toFixed(2)
+    interestRate: parseFloat((Math.random() * (25 - 2) + 2).toFixed(2))
   }))
 
   // Random transaction aggregates
   const transactionAggregates = categories.slice(0, 4).map(category => ({
     category,
     totalAmount: Math.floor(Math.random() * 4000) + 1000,
-    month: "October"
+    month: "November"
   }))
 
   // Random recurring merchants (3-4)

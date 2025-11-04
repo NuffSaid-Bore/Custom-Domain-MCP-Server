@@ -120,12 +120,12 @@
       {
         "name": "Credit Card",
         "monthly_payment": 1000,
-        "interestRate": 12.0
+        "interestRate": 12
       },
       {
         "name": "Clothing Account",
         "monthly_payment": 500,
-        "interestRate": 14.0
+        "interestRate": 14
       }
     ],
     "sessionContext": {},
@@ -302,7 +302,7 @@
       "salary": 104069
     },
     "debts": [
-       {
+      {
         "name": "Student Loan",
         "monthly_payment": 2500,
         "interestRate": 10.5
@@ -310,7 +310,7 @@
       {
         "name": "Credit Card",
         "monthly_payment": 1000,
-        "interestRate": 12.0
+        "interestRate": 12
       }
     ],
     "transactionAggregates": [
@@ -355,6 +355,106 @@
         "name": "MTN Data Plan",
         "amount": 200,
         "frequency": "weekly"
+      }
+    ],
+    "payDates": [
+      {
+        "date": "2025-10-25",
+        "category": "Salary"
+      },
+      {
+        "date": "2025-11-10",
+        "category": "Salary"
+      }
+    ],
+    "sessionContext": {}
+  },
+  {
+    "id": 5,
+    "createdAt": "2025-11-03T09:25:52+02:00",
+    "name": "Bob",
+    "age": 54,
+    "goals": [
+      {
+        "name": "Vacation",
+        "amount": 2594
+      },
+      {
+        "name": "Car Purchase",
+        "amount": 179080
+      },
+      {
+        "name": "Retirement",
+        "amount": 225373
+      }
+    ],
+    "income": {
+      "salary": 164326
+    },
+    "debts": [
+      {
+        "name": "Credit Card",
+        "monthly_payment": 3219,
+        "interestRate": 6.26
+      },
+      {
+        "name": "Personal Loan",
+        "monthly_payment": 3386,
+        "interestRate": 22.99
+      },
+      {
+        "name": "Car Loan",
+        "monthly_payment": 1041,
+        "interestRate": 15.14
+      },
+      {
+        "name": "Student Loan",
+        "monthly_payment": 1190,
+        "interestRate": 5.85
+      }
+    ],
+    "transactionAggregates": [
+      {
+        "category": "Groceries",
+        "totalAmount": 3781,
+        "month": "October"
+      },
+      {
+        "category": "Utilities",
+        "totalAmount": 4867,
+        "month": "October"
+      },
+      {
+        "category": "Transport",
+        "totalAmount": 3425,
+        "month": "October"
+      },
+      {
+        "category": "Dining Out",
+        "totalAmount": 4376,
+        "month": "October"
+      }
+    ],
+    "recurringMerchants": [
+      {
+        "name": "MTN Data Plan",
+        "amount": 200,
+        "frequency": "weekly"
+      },
+      {
+        "name": "Amazon Prime",
+        "amount": 299,
+        "frequency": "monthly"
+      },
+      {
+        "name": "Gym Membership",
+        "amount": 500,
+        "frequency": "monthly"
+      },
+      {
+        "name": "Spotify",
+        "amount": 59.99,
+        "frequency": "monthly"
       }
     ],
     "payDates": [
